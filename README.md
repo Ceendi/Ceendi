@@ -1,6 +1,6 @@
 # hey 👋
  
-I'm Jakub, backend/AI dev from Łódź, Poland. Recently finished my BSc in Computer Science at Łódź University of Technology, now doing my Master's.
+I'm Jakub, backend/AI dev from Łódź, Poland. Recently finished my BSc in Computer Science at Łódź University of Technology, now doing my Master's in Software Engineering & Machine Learning.
  
 I like building things that actually work — most of my projects start from some problem I had or something I wanted to learn. Recently I've been deep into local LLM inference, RAG pipelines, and trying to make AI features that run without burning $200/month on API calls.
  
@@ -8,7 +8,7 @@ I like building things that actually work — most of my projects start from som
  
 ### stuff I've built
  
-**[CalorieTracker AI](https://github.com/Ceendi/CalorieTracker)** — the project I'm most proud of. I was tired of manually logging every meal, so I built an app where you just talk or take a photo. Voice goes through Whisper → Bielik 4.5B SLM (running locally via llama-cpp) → hybrid search with pgvector + pg_trgm. Photo recognition uses Gemini Flash. There's also a RAG meal planner that pulls recipes matching your macros. Backend is a DDD modular monolith in FastAPI, frontend in React Native. Everything runs in Docker with GPU passthrough.
+**[CalorieTracker AI](https://github.com/Ceendi/CalorieTracker)** — the project I'm most proud of. I was tired of manually logging every meal, so I built an app where you just talk or take a photo. Voice goes through Whisper → Bielik 4.5B SLM (running locally via llama-cpp) → hybrid search with pgvector + pg_trgm. Photo recognition uses Gemini Flash. There's also a RAG meal planner that pulls recipes matching your macros. Backend is a DDD modular monolith in FastAPI, frontend in React Native. CI pipeline with GitHub Actions (ruff + Alembic migrations + pytest for backend, Expo lint + Jest for frontend on every push/PR), everything Dockerized with GPU passthrough.
  
 **[GymApp](https://github.com/stejzy/GymApp)** — microservices fitness backend built with 3 friends. 6 Spring Cloud services (auth, users, schedules, workout generation, gateway, config server), OpenAI integration for workout plans, the whole Eureka + Config Server setup. We went a bit overboard with the architecture for a uni project but learned a ton about distributed systems.
  
@@ -23,7 +23,7 @@ I like building things that actually work — most of my projects start from som
 ### what I work with
  
 Python (FastAPI, Django, SQLAlchemy) · Java (Spring Boot, Spring Cloud) · TypeScript · React Native · React · Vue  
-PostgreSQL (pgvector, pg_trgm) · Docker · GCP · AWS · Git · Linux  
+PostgreSQL (pgvector, pg_trgm) · Docker · GCP · AWS · GitHub Actions · Git · Linux  
 Whisper · llama-cpp · E5 embeddings · RAG · BERT · SpaCy · Gemini · OpenAI API  
 pytest · JUnit · Cypress · Cucumber · Maestro
  
