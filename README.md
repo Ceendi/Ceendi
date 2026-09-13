@@ -1,33 +1,35 @@
 # hey 👋
- 
-I'm Jakub, backend/AI dev from Łódź, Poland. Recently finished my BSc in Computer Science at Łódź University of Technology, now doing my Master's in Software Engineering & Machine Learning.
- 
-I like building things that actually work — most of my projects start from some problem I had or something I wanted to learn. Recently I've been deep into local LLM inference, RAG pipelines, and trying to make AI features that run without burning $200/month on API calls.
- 
+
+I'm Jakub, a backend developer from Łódź, Poland. I recently finished my BSc in Applied Computer Science at Łódź University of Technology and I'm currently pursuing an MSc focused on Software Engineering & Machine Learning.
+
+I mainly work with Java/Spring and Python/FastAPI. I like building systems that actually work beyond the happy path — authentication, asynchronous processing, persistence, testing, deployment and handling failures. AI/ML is another area I'm interested in, especially local LLM inference, RAG and practical AI features.
+
 ---
- 
+
 ### stuff I've built
- 
-**[CalorieTracker AI](https://github.com/Ceendi/CalorieTracker)** — the project I'm most proud of. I was tired of manually logging every meal, so I built an app where you just talk or take a photo. Voice goes through Whisper → Bielik 4.5B SLM (running locally via llama-cpp) → hybrid search with pgvector + pg_trgm. Photo recognition uses Gemini Flash. There's also a RAG meal planner that pulls recipes matching your macros. Backend is a DDD modular monolith in FastAPI, frontend in React Native. CI pipeline with GitHub Actions (ruff + Alembic migrations + pytest for backend, Expo lint + Jest for frontend on every push/PR), everything Dockerized with GPU passthrough.
- 
-**[GymApp](https://github.com/stejzy/GymApp)** — microservices fitness backend built with 3 friends. 6 Spring Cloud services (auth, users, schedules, workout generation, gateway, config server), OpenAI integration for workout plans, the whole Eureka + Config Server setup. We went a bit overboard with the architecture for a uni project but learned a ton about distributed systems.
- 
-**[Flashlingo](https://github.com/stejzy/LanguageCOMmunication)** — language learning app where I led a 4-person team. I handled auth (OAuth2 + JWT) and flashcards. The cool part was integrating 5 AWS services (Textract, Translate, Polly, Transcribe, Comprehend) — OCR, speech synthesis, the works. We shipped 2 actual releases.
- 
-**[Video-Sent](https://github.com/Ceendi/CompetencyProject)** — paste a YouTube link, get aspect-level sentiment analysis of a phone review. Transcribes audio, runs it through BERT, shows results on a React dashboard. FastAPI + SQLAlchemy backend.
- 
-**[Moon Poro Bot](https://github.com/Ceendi/Moon-Poro-Bot)** — Discord bot I built and maintained for a League of Legends community. Verification via Riot API, auto-updating rank roles, warn system, tickets. 130 commits, my first "real" project.
- 
+
+**[Deepfake Detector](https://github.com/Ceendi/Deepfake-Detector)** — university team project for detecting manipulated audio and video. I was responsible for the backend and infrastructure: Spring Boot API Gateway, orchestrator and file service, RabbitMQ-based asynchronous processing, Redis, Keycloak, PostgreSQL, Docker Compose, CI and observability. The audio and video ML detection services were developed by other team members.
+
+**[GymApp](https://github.com/stejzy/GymApp)** — microservices fitness application built by a 4-person team. I worked mainly on the authentication and user services, API Gateway, Spring Security + JWT, Eureka and Config Server. The project gave me hands-on experience with Spring Cloud, service-to-service architecture and building a distributed backend.
+
+**[Moon Poro Bot](https://github.com/Ceendi/Moon-Poro-Bot)** — production Discord bot running 24/7 for the largest Polish League of Legends Discord community with 68k+ members. More than 3,300 users have completed its Riot account verification flow. Built with Python, discord.py, PostgreSQL, SQLAlchemy/Alembic and Riot Sign On (OAuth 2.0), deployed on GCP with Caddy, systemd and GitHub Actions.
+
+**[CalorieTracker AI](https://github.com/Ceendi/CalorieTracker)** — an AI-powered nutrition tracking app built because I wanted an easier way to log meals. Voice input goes through Whisper → local Bielik 4.5B SLM → hybrid search with pgvector + pg_trgm, while photo recognition uses Gemini Flash. It also includes a RAG meal planner that matches recipes to macro targets. The backend is a DDD modular monolith in FastAPI, with React Native on the frontend, automated tests and CI through GitHub Actions.
+
+**[Flashlingo](https://github.com/stejzy/LanguageCOMmunication)** — language learning application built as a 4-person university project. I was responsible mainly for the Spring Boot backend, authentication with OAuth2 + JWT, user and flashcard functionality, and AWS deployment. We delivered two working releases of the application.
+
+**[Video-Sent](https://github.com/Ceendi/CompetencyProject)** — application for aspect-level sentiment analysis of video reviews. It downloads and transcribes video content, processes it with BERT and presents the results in a React dashboard. Backend built with FastAPI, SQLAlchemy and Alembic.
+
 ---
- 
+
 ### what I work with
- 
-Python (FastAPI, Django, SQLAlchemy) · Java (Spring Boot, Spring Cloud) · TypeScript · React Native · React · Vue  
-PostgreSQL (pgvector, pg_trgm) · Docker · GCP · AWS · GitHub Actions · Git · Linux  
-Whisper · llama-cpp · E5 embeddings · RAG · BERT · SpaCy · Gemini · OpenAI API  
-pytest · JUnit · Cypress · Cucumber · Maestro
- 
+
+**Backend:** Java · Spring Boot · Spring Cloud · Spring Security · Python · FastAPI · Django  
+**Data:** PostgreSQL · JPA/Hibernate · SQLAlchemy · Redis · pgvector · pg_trgm  
+**Infrastructure:** Docker · GCP · AWS · GitHub Actions · Linux  
+**Testing:** JUnit · Mockito · pytest · Testcontainers · Cucumber · Cypress  
+**AI / ML:** RAG · Whisper · local LLM inference · embeddings · BERT · Gemini · OpenAI API  
+
 ---
- 
+
 📫 **ceendek@gmail.com** · [LinkedIn](https://www.linkedin.com/in/jakub-cendalski-b720642b0/)
- 
